@@ -24,6 +24,7 @@ MidnightTabby didn't sleep so your files could stay messy. We support:
 
 ## ☕ Credits & Acknowledgments
 - **Phil Harvey**: Legend who created ExifTool. Without him, we'd be guessing dates like it's 1999.
+- **iText Group & Community**: Creators of iTextSharp, making robust PDF metadata and structure manipulation possible in a lightweight environment.
 - **AI Collaborator (Gemini)**: Who drank way too much iced coffee to translate a Japanese developer's hyper-fixation on 20-year-old mobile regexes into clean PowerShell, proving that AI and human stubbornness are a **match made in heaven**.
 
 ---
