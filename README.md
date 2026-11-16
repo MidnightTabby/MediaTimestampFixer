@@ -3,14 +3,14 @@
 > A portable, dependency-free PowerShell tool to rescue and align legacy digital archives (2005–present) into pristine chronological order. 
 > Built by **MidnightTabby** in the dead of night, powered by pure PowerShell, ExifTool, and a borderline-obsessive amount of regex rules.
 
----
+<img src="images/z_gen_manga.jpg" alt="Z-Gen Student Chaos" width="100%">
 
 ## 🚀 Why this exists (For Gen-Z, students, & digital packrats)
 If you've ever moved files across multiple phones, cloud syncs, and old hard drives, you know the pain: your precious memories (including those "historical archives" from middle school) are scattered in a chaotic timewarp. 
 
 This tool brings **order and Aesthetic peacekeeping** back to your camera rolls, dashcam footage, security cams, and random PDFs without requiring heavy runtimes or Python environments.
 
----
+<img src="images/pdf_manga.jpg" alt="PDF Chaos" width="100%">
 
 ## 🛠️ Supported Naming Schemas (The Global Regex Vault)
 MidnightTabby didn't sleep so your files could stay messy. We support:
