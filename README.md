@@ -50,7 +50,7 @@ Keep it portable—put everything in one folder:
 1. Right-click `MediaTimestampFixer_v0.80.ps1` and select **"Run with PowerShell"** (or open PowerShell in the folder and run `.\MediaTimestampFixer_v0.80.ps1`).
 2. If prompted about Execution Policy, run the following command in PowerShell first:
    ```powershell
-   Set-ExecutionPolicy -Scope Process -ExecutionPolicy Bypass```
+   Set-ExecutionPolicy -Scope Process -ExecutionPolicy Bypass
 3. Follow the on-screen prompt to specify your target folder (e.g., `D:\Photos\Chaos_Archive`) and let the hybrid engine align your timestamps.
 4. Clean up the portable files/folders once the operation is complete.
 
