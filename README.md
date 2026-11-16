@@ -8,7 +8,7 @@
 ## 🚀 Why this exists (For Gen-Z, students, & digital packrats)
 If you've ever moved files across multiple phones, cloud syncs, and old hard drives, you know the pain: your precious memories (including those "historical archives" from middle school) are scattered in a chaotic timewarp. 
 
-This tool brings **order and "エモい"治安維持 (aesthetic peacekeeping)** back to your camera rolls, dashcam footage, security cams, and random PDFs without requiring heavy runtimes or Python environments.
+This tool brings **order and Aaesthetic peacekeeping** back to your camera rolls, dashcam footage, security cams, and random PDFs without requiring heavy runtimes or Python environments.
 
 ---
 
@@ -24,4 +24,33 @@ MidnightTabby didn't sleep so your files could stay messy. We support:
 
 ## ☕ Credits & Acknowledgments
 * **Phil Harvey**: Legend who created ExifTool. Without him, we'd be guessing dates like it's 1999.
-* **AI Collaborator (Gemini)**: Who drank way too much iced coffee to translate a Japanese developer's hyper-fixation on 20-year-old mobile regexes into clean PowerShell, proving that AI and human stubbornness are a **match made in heaven (まさに優勝)**.
+* **AI Collaborator (Gemini)**: Who drank way too much iced coffee to translate a Japanese developer's hyper-fixation on 20-year-old mobile regexes into clean PowerShell, proving that AI and human stubbornness are a **match made in heaven**.
+
+---
+
+## ⚡ Quick Start & Usage (How to Restore Order)
+
+No complex installation or Python environments required. Just drop and run.
+
+### 1. Prerequisites
+- **Windows 10 / 11** (PowerShell 5.1 or later)
+- **`exiftool.exe`**: Download the Windows Executable from [Phil Harvey's official site](https://exiftool.org/), rename `exiftool(-k).exe` to `exiftool.exe`, and place it in the **same folder** as this script (or add it to your System PATH).
+
+### 2. Folder Structure
+Keep it portable—put everything in one folder:
+```text
+  📁 Chaos_Archive/
+  ├── 📜 MediaTimestampFixer_v0.80.ps1
+  └── ⚙️ exiftool.exe
+  └── ⚙️ itextsharp.dll
+```
+### 3. Run the Script
+1. Right-click `MediaTimestampFixer_v0.80.ps1` and select **"Run with PowerShell"** (or open PowerShell in the folder
+    and run `.\MediaTimestampFixer_v0.80.ps1`).
+2. If prompted about Execution Policy, run the following command in PowerShell first:
+```powershell
+Set-ExecutionPolicy -Scope Process -ExecutionPolicy Bypass
+```
+3. Follow the on-screen prompt to specify your target folder (e.g., `D:\Photos\Chaos_Archive`) and let the hybrid engine align your timestamps.
+### 💡Pro Tip (Safety First)
+**Always test on a small backup folder first before unleashing it on your entire 10-year camera roll!**
