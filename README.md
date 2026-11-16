@@ -42,6 +42,7 @@ Keep it portable—put everything in one folder:
   📁 Chaos_Archive/
   ├── 📜 MediaTimestampFixer_v0.80.ps1
   └── ⚙️ exiftool.exe
+  └── 📁 exiftool_files
   └── ⚙️ itextsharp.dll
 ```
 ### 3. Run the Script
