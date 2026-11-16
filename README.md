@@ -43,6 +43,7 @@ Keep it portable—put everything in one folder:
 ```text
 📁 Chaos_Archive/
  ├── 📜 MediaTimestampFixer_v0.80.ps1
+ ├── ⚙️ itextsharp.dll
  ├── ⚙️ exiftool.exe
  └── 📁 exiftool_files
  ```
