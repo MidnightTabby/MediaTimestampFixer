@@ -3,6 +3,9 @@
 > A portable, dependency-free PowerShell tool to rescue and align legacy digital archives (2005–present) into pristine chronological order. 
 > Built by **MidnightTabby** in the dead of night, powered by pure PowerShell, ExifTool, and a borderline-obsessive amount of regex rules.
 
+## 🔒 Zero-Byte Modification Guarantee
+This tool only adjusts the file system timestamps (NTFS Creation & Modification times) to restore chronological order. Your original file binaries remain 100% untouched—exact hashes and internal metadata are completely preserved.
+
 <img src="images/z_gen_manga.jpg" alt="Z-Gen Student Chaos" width="100%">
 
 ## 🚀 Why this exists (For Gen-Z, students, & digital packrats)
