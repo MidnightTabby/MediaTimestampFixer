@@ -67,9 +67,6 @@ Keep it portable—put everything in one folder:
 ### 💡 Why Filename Priority over Internal Metadata?
 You might wonder: *"Why parse filenames first instead of relying directly on internal EXIF or video metadata?"*
 
-### 💡 Why Filename Priority over Internal Metadata?
-You might wonder: *"Why parse filenames first instead of relying directly on internal EXIF or video metadata?"*
-
 Here is the dirty secret of digital archiving: **File system metadata and internal timestamps lie, but a well-formulated filename rarely does.**
 1. **The Delayed-Write & Copy Trap:** When moving files across different file systems (FAT32, exFAT, NTFS, cloud sync storages), internal creation/modification dates (`CreationTime` / `LastWriteTime`) are frequently wiped, overwritten, or skewed to the exact timestamp of the file transfer. 
 2. **Untrustworthy Device Clocks:** Many dashcams, security cameras, and legacy feature phones have dead internal batteries or lack NTP sync, causing their internal metadata (`CreateDate`) to default to absurd dates like 1970 or 2000. 
