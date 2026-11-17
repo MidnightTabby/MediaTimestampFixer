@@ -62,3 +62,11 @@ Keep it portable—put everything in one folder:
 
 ### 💡Pro Tip (Safety First)
 **Always test on a small backup folder first before unleashing it on your entire 10-year camera roll!**
+
+### 💡 Why Filename Priority over Internal Metadata?
+You might wonder: *"Why parse filenames first instead of relying directly on internal EXIF or video metadata?"*
+
+Here is the dirty secret of digital archiving: **File system metadata and internal timestamps lie, but a well-formulated filename rarely does.**
+1. **The Delayed-Write / Copy Trap:** When moving files across different file systems (like FAT32, exFAT, NTFS, or cloud sync storages), internal file creation/modification dates (`CreationTime` / `LastWriteTime`) are frequently wiped, overwritten, or skewed to the exact timestamp of the file transfer. 
+2. **Untrustworthy Device Clocks:** Many dashcams, security cameras, and legacy feature phones have dead internal batteries or lack NTP sync, causing their internal metadata (`CreateDate`) to default to absurd dates like 1970 or 2000. 
+3. **The Lifeline:** Device firmware that explicitly stamps recording dates directly into the filename (e.g., `20261107_171352.mp4`) acts as an immutable, human-readable anchor. By prioritizing the filename regex first, we rescue the true temporal origin before falling back to internal metadata as a secondary safety net.
