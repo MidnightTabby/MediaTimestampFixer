@@ -20,7 +20,7 @@ MidnightTabby didn't sleep so your files could stay messy. We support:
 - **US English Month & Numeric Formats** (`NOV15-2027...`, `MM-DD-YYYY`)
 - **Standard EXIF & QuickTime Metadata / PDFs (iTextSharp)**
 
----
+<video src="./images/image.mp4" autoplay loop muted playsinline width="100%"></video>
 
 ## ☕ Credits & Acknowledgments
 - **Phil Harvey**: Legend who created ExifTool. Without him, we'd be guessing dates like it's 1999.
