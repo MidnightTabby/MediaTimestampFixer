@@ -45,7 +45,6 @@ Every run automatically generates a detailed, tab-separated execution log (`Medi
 |2026-11-18 20:14:26 | UPDATED | `D:\Recovered_Archive\IMG_0524.MOV` | Internal Metadata (ExifTool) | 2023-11-02 09:49:09 | 2023-11-02 09:49:11 |
 |2026-11-18 20:14:26 | UPDATED | `D:\Recovered_Archive\IMG_4652.HEIC` | Internal Metadata (ExifTool) | 2026-07-04 20:52:16 | 2026-07-04 20:52:16 |
 |2026-11-18 20:14:26 | UPDATED | `D:\Recovered_Archive\NR300_20120818_150507_F.MP4` | Filename + Duration | 2012-08-18 15:05:07 | 2012-08-18 15:06:07 |
-|2026-11-18 20:14:26 | UPDATED | `D:\Recovered_Archive\NR300_20241113_131822_F.MP4` | Filename + Duration | 2024-11-13 13:18:22 | 2024-11-13 13:19:22 |
 |2026-11-18 20:14:26 | UPDATED | `D:\Recovered_Archive\rec_20211710_175027.MP4` | Internal Metadata (ExifTool) + Duration | 2024-05-27 04:03:32 | 2024-05-27 04:04:41 |
 |2026-11-18 20:14:26 | UPDATED | `D:\Recovered_Archive\share_1718293400000.MP4` | Internal Metadata (ExifTool) + Duration | 2024-02-06 22:42:44 | 2024-02-06 22:43:10 |
 |2026-11-18 20:14:26 | UPDATED | `D:\Recovered_Archive\Signed_NDA_AcmeCorp.pdf` | Internal Metadata (ExifTool) | 2011-05-13 11:50:42 | 2011-05-13 11:50:42 |
