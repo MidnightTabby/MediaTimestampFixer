@@ -63,7 +63,7 @@ Every run automatically generates a detailed, tab-separated execution log (`Medi
 No complex installation or Python environments required. Just drop and run.
 
 ### 1. Prerequisites
-- **Windows 10 / 11** (PowerShell 5.1 or later)
+- **Windows 10 / 11** (PowerShell 7 (Recommended) / Windows PowerShell 5.1+)
 - **`exiftool.exe`**: Download the Windows Executable from [Phil Harvey's official site](https://exiftool.org/), rename `exiftool(-k).exe` to `exiftool.exe`, and place it in the **same folder** as this script (or add it to your System PATH).
 - **`itextsharp.dll`**: Placed alongside the script for handling PDF metadata extraction.
 
