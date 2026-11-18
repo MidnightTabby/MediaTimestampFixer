@@ -34,22 +34,23 @@ Every run automatically generates a detailed, tab-separated execution log (`Medi
 
 | Timestamp | Status | FilePath | Source | Created | Modified |
 | :--- | :--- | :--- | :--- | :--- | :--- |
-| 2026-11-17 22:50:38 | UPDATED | `D:\Recovered_Archive\401k_Statement_Q4.pdf` | PDF Metadata | 2008-01-21 12:53:07 | 2008-08-26 19:31:39 |
-| 2026-11-17 22:50:38 | UPDATED | `D:\Recovered_Archive\2024_1113_131822_001A.MP4` | Filename | 2024-11-13 13:18:22 | 2024-11-13 13:18:22 |
-| 2026-11-17 22:50:38 | UPDATED | `D:\Recovered_Archive\Document_scan_final_v2.pdf` | PDF Metadata | 2017-06-15 10:27:22 | 2017-06-15 10:27:22 |
-| 2026-11-17 22:50:38 | UPDATED | `D:\Recovered_Archive\doorbell_CH01_20241113131822_20241113131842_952700062CS5675J_0.MP4` | Filename | 2024-11-13 13:18:22 | 2024-11-13 13:18:42 |
-| 2026-11-17 22:50:38 | UPDATED | `D:\Recovered_Archive\DSC_0412.JPG` | Internal Metadata (ExifTool) | 2005-07-17 15:59:55 | 2005-07-17 15:59:55 |
-| 2026-11-17 22:50:38 | UPDATED | `D:\Recovered_Archive\FB_IMG_948271645012.JPG` | Internal Metadata (ExifTool) | 2021-04-03 10:03:35 | 2021-04-03 10:03:35 |
-| 2026-11-17 22:50:38 | UPDATED | `D:\Recovered_Archive\history_video_2024-11-13_13-18-22.MP4` | Filename | 2024-11-13 13:18:22 | 2024-11-13 13:18:22 |
-| 2026-11-17 22:50:38 | UPDATED | `D:\Recovered_Archive\image0.jpg` | Internal Metadata (ExifTool) | 2015-06-06 07:27:00 | 2015-06-06 07:27:00 |
-| 2026-11-17 22:50:38 | UPDATED | `D:\Recovered_Archive\IMG_0524.MOV` | Internal Metadata (ExifTool) | 2023-11-02 09:49:09 | 2023-11-02 09:49:11 |
-| 2026-11-17 22:50:38 | UPDATED | `D:\Recovered_Archive\IMG_4652.HEIC` | Internal Metadata (ExifTool) | 2026-07-04 20:52:16 | 2026-07-04 20:52:16 |
-| 2026-11-17 22:50:38 | UPDATED | `D:\Recovered_Archive\NR300_20241113_131822_F.MP4` | Filename | 2024-11-13 13:18:22 | 2024-11-13 13:18:22 |
-| 2026-11-17 22:50:38 | UPDATED | `D:\Recovered_Archive\rec_20241113_131822.MP4` | Filename | 2024-11-13 13:18:22 | 2024-11-13 13:18:22 |
-| 2026-11-17 22:50:38 | UPDATED | `D:\Recovered_Archive\share_1718293400000.MP4` | Internal Metadata (ExifTool) | 2024-02-06 22:42:44 | 2024-02-06 22:42:44 |
-| 2026-11-17 22:50:38 | UPDATED | `D:\Recovered_Archive\Signed_NDA_AcmeCorp.pdf` | Internal Metadata (ExifTool) | 2011-05-13 11:50:42 | 2011-05-13 11:50:42 |
-| 2026-11-17 22:50:38 | UPDATED | `D:\Recovered_Archive\tumblr_inline_p9x8y7z6.JPG` | Internal Metadata (ExifTool) | 2000-07-02 13:37:24 | 2000-07-02 13:37:24 |
-| 2026-11-17 22:50:38 | UPDATED | `D:\Recovered_Archive\W2_Form_Copy.pdf` | PDF Metadata | 2018-02-02 10:54:58 | 2018-02-02 10:55:07 |
+|2026-11-18 20:14:26 | UPDATED | `D:\Recovered_Archive\2019_0204_052657_001A.MP4` | Filename + Duration | 2019-02-04 05:26:57 | 2019-02-04 05:27:57 |
+|2026-11-18 20:14:26 | UPDATED | `D:\Recovered_Archive\401k_Statement_Q4.pdf` | PDF Metadata | 2008-01-21 12:53:07 | 2008-08-26 19:31:39 |
+|2026-11-18 20:14:26 | UPDATED | `D:\Recovered_Archive\Document_scan_final_v2.pdf` | PDF Metadata | 2017-06-15 10:27:22 | 2017-06-15 10:27:22 |
+|2026-11-18 20:14:26 | UPDATED | `D:\Recovered_Archive\doorbell_CH01_20240730120035_20240730122747_952700062CS5675J_0..MP4` | Filename | 2024-07-30 12:00:35 | 2024-07-30 12:27:47 |
+|2026-11-18 20:14:26 | UPDATED | `D:\Recovered_Archive\DSC_0412.JPG` | Internal Metadata (ExifTool) | 2005-07-17 15:59:55 | 2005-07-17 15:59:55 |
+|2026-11-18 20:14:26 | UPDATED | `D:\Recovered_Archive\FB_IMG_948271645012.JPG` | Internal Metadata (ExifTool) | 2021-04-03 10:03:35 | 2021-04-03 10:03:35 |
+|2026-11-18 20:14:26 | UPDATED | `D:\Recovered_Archive\history_video_2015-07-05_17-21-31.MP4` | Filename + Duration | 2015-07-05 17:21:31 | 2015-07-05 17:22:16 |
+|2026-11-18 20:14:26 | UPDATED | `D:\Recovered_Archive\image0.jpg` | Internal Metadata (ExifTool) | 2015-06-06 07:27:00 | 2015-06-06 07:27:00 |
+|2026-11-18 20:14:26 | UPDATED | `D:\Recovered_Archive\IMG_0524.MOV` | Internal Metadata (ExifTool) | 2023-11-02 09:49:09 | 2023-11-02 09:49:11 |
+|2026-11-18 20:14:26 | UPDATED | `D:\Recovered_Archive\IMG_4652.HEIC` | Internal Metadata (ExifTool) | 2026-07-04 20:52:16 | 2026-07-04 20:52:16 |
+|2026-11-18 20:14:26 | UPDATED | `D:\Recovered_Archive\NR300_20120818_150507_F.MP4` | Filename + Duration | 2012-08-18 15:05:07 | 2012-08-18 15:06:07 |
+|2026-11-18 20:14:26 | UPDATED | `D:\Recovered_Archive\NR300_20241113_131822_F.MP4` | Filename + Duration | 2024-11-13 13:18:22 | 2024-11-13 13:19:22 |
+|2026-11-18 20:14:26 | UPDATED | `D:\Recovered_Archive\rec_20211710_175027.MP4` | Internal Metadata (ExifTool) + Duration | 2024-05-27 04:03:32 | 2024-05-27 04:04:41 |
+|2026-11-18 20:14:26 | UPDATED | `D:\Recovered_Archive\share_1718293400000.MP4` | Internal Metadata (ExifTool) + Duration | 2024-02-06 22:42:44 | 2024-02-06 22:43:10 |
+|2026-11-18 20:14:26 | UPDATED | `D:\Recovered_Archive\Signed_NDA_AcmeCorp.pdf` | Internal Metadata (ExifTool) | 2011-05-13 11:50:42 | 2011-05-13 11:50:42 |
+|2026-11-18 20:14:26 | UPDATED | `D:\Recovered_Archive\tumblr_inline_p9x8y7z6.JPG` | Internal Metadata (ExifTool) | 2000-07-02 13:37:24 | 2000-07-02 13:37:24 |
+|2026-11-18 20:14:26 | UPDATED | `D:\Recovered_Archive\W2_Form_Copy.pdf` | PDF Metadata | 2018-02-02 10:54:58 | 2018-02-02 10:55:07 |
 
 ## ☕ Credits & Acknowledgments
 - **Phil Harvey**: Legend who created ExifTool. Without him, we'd be guessing dates like it's 1999.
