@@ -96,3 +96,19 @@ Here is the dirty secret of digital archiving: **File system metadata and intern
 1. **The Delayed-Write / Copy Trap:** When moving files across different file systems (like FAT32, exFAT, NTFS, or cloud sync storages), internal file creation/modification dates (`CreationTime` / `LastWriteTime`) are frequently wiped, overwritten, or skewed to the exact timestamp of the file transfer. 
 2. **Untrustworthy Device Clocks:** Many dashcams, security cameras, and legacy feature phones have dead internal batteries or lack NTP sync, causing their internal metadata (`CreateDate`) to default to absurd dates like 1970 or 2000. 
 3. **The Lifeline:** Device firmware that explicitly stamps recording dates directly into the filename (e.g., `20261107_171352.mp4`) acts as an immutable, human-readable anchor. By prioritizing the filename regex first, we rescue the true temporal origin before falling back to internal metadata as a secondary safety net.
+
+# Changelog
+
+All notable changes to **MediaTimestampFixer** will be documented in this file.
+
+For detailed language-specific release notes, please check:
+- [English Documentation](./docs/en/CHANGELOG.md)
+- [日本語ドキュメント](./docs/ja/CHANGELOG.md)
+
+---
+
+## [v0.86] - 2026-11-18 (Pre-release)
+### Added
+- **Hybrid Video Duration Offset**: Automatically queries ExifTool for exact numeric duration (`-n`) and appends it to calculate the correct `LastWriteTime` (end time) when only start timestamps are available from filenames or XML sidecars.
+- **XML Sidecar Priority 2 Support**: Added 1-to-1 automatic matching for `.xml` sidecar files (Sony XDCAM, GoPro, CCTV/dashcams).
+- **Enhanced TSV Audit Logging**: Improved tracking with precise source tags (e.g., `Filename
