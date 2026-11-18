@@ -111,4 +111,4 @@ For detailed language-specific release notes, please check:
 ### Added
 - **Hybrid Video Duration Offset**: Automatically queries ExifTool for exact numeric duration (`-n`) and appends it to calculate the correct `LastWriteTime` (end time) when only start timestamps are available from filenames or XML sidecars.
 - **XML Sidecar Priority 2 Support**: Added 1-to-1 automatic matching for `.xml` sidecar files (Sony XDCAM, GoPro, CCTV/dashcams).
-- **Enhanced TSV Audit Logging**: Improved tracking with precise source tags (e.g., `Filename
+- **Enhanced TSV Audit Logging**: Improved tracking with precise source tags (e.g., `Filename + Duration`, `XML Sidecar`).
