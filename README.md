@@ -64,7 +64,12 @@ No complex installation or Python environments required. Just drop and run.
 
 ### 1. Prerequisites
 - **Windows 10 / 11** (PowerShell 7 (Recommended) / Windows PowerShell 5.1+)
-- **`exiftool.exe`**: Download the Windows Executable from [Phil Harvey's official site](https://exiftool.org/), rename `exiftool(-k).exe` to `exiftool.exe`, and place it in the **same folder** as this script (or add it to your System PATH).
+- **`exiftool.exe`**: Download the Windows Executable from [Phil Harvey's official site](https://exiftool.org/),
+<blockquote><table class="dl lg"><tbody><tr><td rowspan="2"><b>Windows</b></td>
+<td><b>32-bit: exiftool-13.64_32.zip (11.4 MB)</b></td></tr>
+<tr><td><b>64-bit: exiftool-13.64_64.zip (11.2 MB)</b></td></tr>
+</tbody></table></blockquote>
+-  rename `exiftool(-k).exe` to `exiftool.exe`, and place it in the **same folder** as this script (or add it to your System PATH).
 - **`itextsharp.dll`**: Placed alongside the script for handling PDF metadata extraction.
 
 ### 2. Folder Structure
