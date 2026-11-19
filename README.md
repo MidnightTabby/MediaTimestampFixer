@@ -118,3 +118,89 @@ For detailed language-specific release notes, please check:
 - **Hybrid Video Duration Offset**: Automatically queries ExifTool for exact numeric duration (`-n`) and appends it to calculate the correct `LastWriteTime` (end time) when only start timestamps are available from filenames or XML sidecars.
 - **XML Sidecar Priority 2 Support**: Added 1-to-1 automatic matching for `.xml` sidecar files (Sony XDCAM, GoPro, CCTV/dashcams).
 - **Enhanced TSV Audit Logging**: Improved tracking with precise source tags (e.g., `Filename + Duration`, `XML Sidecar`).
+
+---
+
+# 💡 Quick Tips: Fast Pre-Scan Recon (`ls` Style, No Heavy Tools Needed)
+
+Before running deep media scans, heavy metadata/audio checks, or full hash comparisons across massive folders, use these three lightweight PowerShell snippets. They evolve the classic DOS/PowerShell `>` pipe/redirect workflow into clean, tab-separated (`TSV`) files with timestamps—zero extra installs, zero edits to your original files.
+
+## 1. Fast Recursive File & Size Inventory (`filelist_*.tsv`)
+
+Want a quick list of **every file, size in MB, and last modified date** across a folder (including subfolders)? Press **Enter** to scan your current folder—or paste any folder path you want to check:
+
+```powershell
+# Prompt for target folder (press Enter to use the current folder)
+$TargetDir = Read-Host "Target folder path (Press Enter for current folder)"
+if ([string]::IsNullOrWhiteSpace($TargetDir)) {
+    $TargetDir = (Get-Location).Path
+}
+$TargetDir = $TargetDir.Trim('"', "'", ' ')
+
+# Save a timestamped TSV inside the scanned folder
+$Stamp = Get-Date -Format "yyyyMMdd_HHmmss"
+$OutFile = Join-Path $TargetDir "filelist_$Stamp.tsv"
+$StartTime = Get-Date
+
+Get-ChildItem -Path $TargetDir -Recurse -File -ErrorAction SilentlyContinue |
+    Select-Object FullName,
+        @{Name = "Size_MB"; Expression = { [math]::Round($_.Length / 1MB, 2) }},
+        LastWriteTime |
+    Export-Csv -Path $OutFile -Delimiter "`t" -NoTypeInformation -Encoding UTF8
+
+$Elapsed = (Get-Date) - $StartTime
+Add-Content -Path $OutFile -Value "`nElapsed: $($Elapsed.ToString('hh\:mm\:ss'))" -Encoding UTF8
+
+Write-Host "Saved to: $OutFile"
+```
+
+- **Zero path editing needed:** Works right out of the box on any drive, USB/SSD, or folder.
+- **Tab-separated (`TSV`):** Commas in filenames won't break your columns, and each run creates a timestamped file so you don't accidentally overwrite earlier snapshots.
+- **Elapsed time at the bottom:** Appends total scan duration so you know how long big folders take.
+
+## 2. Extension & Size Breakdown (`ext_summary_*.tsv`)
+
+Want to see what file types are actually eating up your drive or folder before deciding what to keep, convert, or clean up? Run this in your target folder:
+
+```powershell
+$TargetDir = (Get-Location).Path
+$Stamp     = Get-Date -Format "yyyyMMdd_HHmmss"
+$OutFile   = Join-Path $TargetDir "ext_summary_$Stamp.tsv"
+
+Get-ChildItem -LiteralPath $TargetDir -Recurse -File -ErrorAction SilentlyContinue |
+    Group-Object Extension |
+    Select-Object @{Name = "Extension"; Expression = { if ($_.Name) { $_.Name.ToLower() } else { "(no_ext)" } }},
+        @{Name = "Count"; Expression = { $_.Count }},
+        @{Name = "Total_MB"; Expression = { [math]::Round((($_.Group | Measure-Object Length -Sum).Sum / 1MB), 2) }} |
+    Sort-Object Total_MB -Descending |
+    Export-Csv -Path $OutFile -Delimiter "`t" -NoTypeInformation -Encoding UTF8
+
+Write-Host "Saved -> $OutFile"
+```
+
+- **Fast terrain check:** Shows file counts and total MB per extension so heavy formats jump right out.
+- **Spreadsheet-friendly:** Tab-separated (`TSV`) output stays clean when sorting or filtering.
+
+## 3. Quick Duplicate Candidates (`dup_candidates_*.tsv`)
+
+Before burning time calculating hashes across huge archives, spot obvious same-name + same-byte-size clones across folders in seconds:
+
+```powershell
+$TargetDir = (Get-Location).Path
+$Stamp     = Get-Date -Format "yyyyMMdd_HHmmss"
+$OutFile   = Join-Path $TargetDir "dup_candidates_$Stamp.tsv"
+
+Get-ChildItem -LiteralPath $TargetDir -Recurse -File -ErrorAction SilentlyContinue |
+    Group-Object Length, Name |
+    Where-Object { $_.Count -gt 1 } |
+    ForEach-Object {
+        $_.Group | Select-Object @{Name = "GroupCount"; Expression = { $_.Count }},
+            @{Name = "Size_MB"; Expression = { [math]::Round($_.Length / 1MB, 2) }},
+            Name, FullName, LastWriteTime
+    } |
+    Export-Csv -Path $OutFile -Delimiter "`t" -NoTypeInformation -Encoding UTF8
+
+Write-Host "Saved -> $OutFile"
+```
+
+- **Fast triage, not final verdict:** Matches identical file **size + name** for quick leads—renamed copies or coincidental same-name/same-size files can still appear, so double-check before deleting anything.
