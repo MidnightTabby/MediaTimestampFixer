@@ -69,8 +69,9 @@ No complex installation or Python environments required. Just drop and run.
 <td><b>32-bit: exiftool-13.64_32.zip (11.4 MB)</b></td></tr>
 <tr><td><b>64-bit: exiftool-13.64_64.zip (11.2 MB)</b></td></tr>
 </tbody></table></blockquote>
--  rename `exiftool(-k).exe` to `exiftool.exe`, and place it in the **same folder** as this script (or add it to your System PATH).
-- **`itextsharp.dll`**: Placed alongside the script for handling PDF metadata extraction.
+
+- rename `exiftool(-k).exe` to `exiftool.exe`, and place it in the **same folder** as this script (or add it to your System PATH).
+- `itextsharp.dll`: Placed alongside the script for handling PDF metadata extraction.
 
 ### 2. Folder Structure
 Keep it portable—put everything in one folder:
