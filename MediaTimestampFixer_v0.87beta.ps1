@@ -1,6 +1,6 @@
 <#
 .SYNOPSIS
-    MediaTimestampFixer v0.86beta - Digital Archive Timestamp & Metadata Aligner
+    MediaTimestampFixer v0.87beta - Digital Archive Timestamp & Metadata Aligner
 .DESCRIPTION
     1. Priority 1 (Filename): Extracts start/end timestamps from filenames using global regex rules.
     2. Priority 2 (XML Sidecar): Detects 1-to-1 matching .xml sidecar files (e.g., Sony XDCAM, GoPro, Reolink)
@@ -345,7 +345,7 @@ function Export-FixerReports {
 
     $jsonPayload = [PSCustomObject]@{
         tool          = "MediaTimestampFixer"
-        version       = "v0.86beta"
+        version       = "v0.87beta"
         generated_at  = $ExecutionTime
         target_folder = $TargetDir
         summary       = [PSCustomObject]@{
@@ -384,7 +384,7 @@ function Export-FixerReports {
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>MediaTimestampFixer v0.86beta Report</title>
+  <title>MediaTimestampFixer v0.87beta Report</title>
   <style>
     :root {
       --bg: #f6f8fa;
@@ -536,7 +536,7 @@ function Export-FixerReports {
   <div class="container">
     <div class="header">
       <div>
-        <h1>MediaTimestampFixer v0.86beta Report</h1>
+        <h1>MediaTimestampFixer v0.87beta Report</h1>
         <div class="meta">Target: $(ConvertTo-HtmlSafe $TargetDir)</div>
       </div>
       <div class="meta">Generated: $(ConvertTo-HtmlSafe $ExecutionTime)</div>
@@ -593,7 +593,7 @@ $($rowsBuilder.ToString())
 # ==============================================================================
 Clear-Host
 Write-Host "=================================================================" -ForegroundColor Cyan
-Write-Host " 📸 Media Timestamp & Metadata Fixer v0.86beta (MidnightTabby)" -ForegroundColor Cyan
+Write-Host " 📸 Media Timestamp & Metadata Fixer v0.87beta (MidnightTabby)" -ForegroundColor Cyan
 Write-Host "=================================================================" -ForegroundColor Cyan
 Write-Host " Rule: [1] Filename -> [2] XML Sidecar -> [3] Metadata + Duration Offset" -ForegroundColor DarkGray
 Write-Host " Outputs: TSV + HTML (Inline CSS3) + JSON" -ForegroundColor DarkGray
@@ -623,7 +623,7 @@ $ExcludeNames = @(
     "MediaTimestampFixer_v0.80.ps1", "MediaTimestampFixer_v0.81.ps1",
     "MediaTimestampFixer_v0.82.ps1", "MediaTimestampFixer_v0.83.ps1",
     "MediaTimestampFixer_v0.84beta.ps1", "MediaTimestampFixer_v0.85beta.ps1",
-    "MediaTimestampFixer_v0.86beta.ps1",
+    "MediaTimestampFixer_v0.87beta.ps1",
     "exiftool.exe", "itextsharp.dll", "README.md", "MediaTimestampFixer.log"
 )
 
