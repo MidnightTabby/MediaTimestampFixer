@@ -112,6 +112,13 @@ For detailed language-specific release notes, please check:
 
 ---
 
+## [v0.87] - 2026-11-23 (Pre-release)
+### Added
+- **Simultaneous 3-Format Export:** Outputs `.tsv`, self-contained `.html` (inline CSS3), and `.json` side by side from a single run.
+- **Preserves Zero-Byte File Integrity:** Updates filesystem `CreationTime` and `LastWriteTime` without altering media bytes.
+ 
+---
+
 ## [v0.86] - 2026-11-18 (Pre-release)
 ### Added
 - **Hybrid Video Duration Offset**: Automatically queries ExifTool for exact numeric duration (`-n`) and appends it to calculate the correct `LastWriteTime` (end time) when only start timestamps are available from filenames or XML sidecars.
