@@ -1,4 +1,20 @@
-# 🚀 MediaTimestampFixer v0.86 (Pre-release)
+# Changelog
+> Portable PowerShell script to standardize media file timestamps from filenames,
+> XML sidecars, or metadata—with video duration offset support.
+
+## ✨ What's New in v0.87 - 2026-11-23 (Pre-release)
+- **Simultaneous 3-Format Export:** Outputs `.tsv`, self-contained `.html` (inline CSS3), and `.json` side by side from a single run.
+- **Preserves Zero-Byte File Integrity:** Updates filesystem `CreationTime` and `LastWriteTime` without altering media bytes.
+
+#### ⚙️ Requirements
+- Windows 10 / 11 (PowerShell 5.1+ / PowerShell 7)
+- Optional: `exiftool.exe`, `itextsharp.dll`
+
+*Built by MidnightTabby.*
+
+---
+
+## 🚀 MediaTimestampFixer v0.86 (Pre-release)
 
 > **"Digital Archive Timestamp & Metadata Aligner"**  
 > Zero-byte modification, immutable filenames/metadata, and crystal-clear audit logging to bring absolute chronological order to your digital archives and pro editing workflows.
@@ -43,3 +59,5 @@ While we continue active real-world testing, this version brings enterprise-grad
 ## ☕ Credits & Behind the Scenes
 * **Author**: **MidnightTabby** — Operating in the dead of night to bring aesthetic order ("治安維持") to chaotic camera rolls and legacy media archives.
 * **AI Collaborator**: **Gemini** — Translating borderline-obsessive regex rules and edge-case media pipelines into clean PowerShell.
+
+*Built by MidnightTabby in the dead of night.*
