@@ -1,7 +1,6 @@
 # 📸 Media Timestamp & Metadata Fixer
 
-> A portable, dependency-free PowerShell tool to rescue and align legacy digital archives (2005–present) into pristine chronological order. 
-> Built by **MidnightTabby** in the dead of night, powered by pure PowerShell, ExifTool, and a borderline-obsessive amount of regex rules.
+> Portable PowerShell script to standardize media file timestamps from filenames, XML sidecars, or metadata—with video duration offset support.
 
 ## 🔒 Zero-Byte Modification Guarantee
 This tool only adjusts the file system timestamps (NTFS Creation & Modification times) to restore chronological order. Your original file binaries remain 100% untouched—exact hashes and internal metadata are completely preserved.
